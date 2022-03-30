@@ -18,6 +18,7 @@ import {
 import { useGetCryptoDetailsQuery } from "../services/cryptoApi";
 import { useGetCryptoHistoryQuery } from "../services/cryptoApi";
 import LineChart from "./LineChart";
+import Loader from "./Loader";
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -105,7 +106,7 @@ const CryptoDetails = () => {
     console.log(cryptoDetails);
   }, [data, cryptoDetails]);
 
-  if (!cryptoDetails) return "Loading ...";
+  if (!cryptoDetails) return <Loader />;
 
   return (
     <>
