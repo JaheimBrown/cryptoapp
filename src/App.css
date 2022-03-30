@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f0f2f5 !important;
+}
+
 a:hover {
   color: var(--pink) !important;
 }
@@ -29,7 +33,7 @@ a:hover {
 
 .main {
   flex: 0.8;
-  width: 100%;
+  max-width: 100%;
 }
 .routes {
   padding: 20px;
@@ -75,19 +79,19 @@ a:hover {
 
 @media screen and (max-width: 1300px) {
   .main {
-    margin-left: 50px;
+    padding-left: 250px;
   }
 }
 
 @media screen and (max-width: 1170px) {
   .main {
-    margin-left: 50px;
+    padding-left: 230px;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .main {
-    margin-left: 100px;
+    padding-left: 230px;
   }
 }
 
@@ -104,7 +108,7 @@ a:hover {
   .main {
     flex: 1;
     margin-top: 90px;
-    margin-left: 0px;
+    padding-left: 0 !important;
     margin-right: 10px;
   }
 
@@ -200,6 +204,13 @@ a:hover {
 .coin-value-statistics-heading p {
   font-size: 1rem;
   opacity: 0.9;
+}
+
+#Links-header {
+  display: block;
+  font-weight: 500;
+  color: #000 !important;
+  margin-bottom: 0.5em;
 }
 
 .coin-desc-link {
